@@ -1,2 +1,0 @@
-# nestjs-prisma
-aprendendo nest
