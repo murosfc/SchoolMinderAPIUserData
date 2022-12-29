@@ -3,8 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "predev": "yarn install",
     "dev": "next dev",
+    "prebuild": "yarn install",
     "build": "next build",
+    "prestart": "yarn install",
     "start": "next start",
     "lint": "next lint"
   },
