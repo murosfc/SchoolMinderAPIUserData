@@ -6,8 +6,6 @@ RUN chown -R node:node /backend
 
 COPY ./backend .
 
-RUN yarn install
-
 EXPOSE 5000
 
 CMD [ "yarn","start:dev" ]

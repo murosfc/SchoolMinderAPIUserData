@@ -6,8 +6,6 @@ RUN chown -R node:node /frontend
 
 COPY ./frontend .
 
-RUN yarn install
-
 EXPOSE 3000
 
 CMD [ "yarn","dev" ]
