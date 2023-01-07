@@ -32,7 +32,7 @@ services:
       - database
 
   frontend:
-    container_name: FrontEnd-Template
+    container_name: frontend-template
     build:
       context: .
       dockerfile: Dockerfile.frontend
@@ -46,3 +46,5 @@ services:
       PORT: 3000
       LOGGER: "debug,error,log,verbose,warn"
       NODE_ENV: "development"
+    depends_on:
+      - database
