@@ -8,6 +8,7 @@
   "scripts": {
     "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
+    "prestart":"yarn install",
     "start": "nest start",
     "prestart:dev": "yarn install",
     "start:dev": "nest start --watch",
