@@ -140,7 +140,7 @@ jobs:
       
       # instala os pacotes
       - name: Precisa instalar antes os pacotes npm
-        run: npm ci
+        run: yarn install
       
       # se tiver build, então builda
       - name: se tiver um script build, então execute
