@@ -123,6 +123,7 @@ jobs:
     steps:
       # iniciando o script do pipeline
       - name: Iniciando o workflow
+        working-directory: ./backend
         run: |
           echo "Início do pipeline do github Actions"
           echo ""
