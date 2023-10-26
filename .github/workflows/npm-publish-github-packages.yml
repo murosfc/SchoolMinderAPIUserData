@@ -122,8 +122,7 @@ jobs:
     # execução:
     steps:
       # iniciando o script do pipeline
-      - name: Iniciando o workflow
-        working-directory: /home/runner/work/SchoolMinderAPP/backend
+      - name: Iniciando o workflow        
         run: |
           echo "Início do pipeline do github Actions"
           echo ""
@@ -134,19 +133,22 @@ jobs:
         uses: actions/checkout@v3
       
       # instala o node
-      - name: Instalar Node.js
+      - name: Instalar Node.js            
         uses: actions/setup-node@v3
         with:
           node-version: '18.x'
       
       # instala os pacotes
       - name: Precisa instalar antes os pacotes npm
+        working-directory: /home/runner/work/SchoolMinderAPP/backend
         run: yarn install
       
       # se tiver build, então builda
       - name: se tiver um script build, então execute
+        working-directory: /home/runner/work/SchoolMinderAPP/backend
         run: npm run build --if-present
       
       # executa os testes
       - name: tem obrigatoriamente que executar os testes
+        working-directory: /home/runner/work/SchoolMinderAPP/backend
         run: yarn run test
