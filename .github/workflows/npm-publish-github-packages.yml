@@ -140,15 +140,13 @@ jobs:
       
       # instala os pacotes
       - name: Precisa instalar antes os pacotes npm
-        working-directory: /home/runner/work/SchoolMinderAPP/backend
         run: yarn install
       
       # se tiver build, então builda
       - name: se tiver um script build, então execute
-        working-directory: /home/runner/work/SchoolMinderAPP/backend
         run: npm run build --if-present
       
       # executa os testes
       - name: tem obrigatoriamente que executar os testes
-        working-directory: /home/runner/work/SchoolMinderAPP/backend
+        working-directory: backend
         run: yarn run test
