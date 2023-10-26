@@ -148,4 +148,4 @@ jobs:
       
       # executa os testes
       - name: tem obrigatoriamente que executar os testes
-        run: npm test
+        run: yarn run test
