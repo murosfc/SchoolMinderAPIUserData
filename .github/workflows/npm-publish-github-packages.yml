@@ -145,7 +145,6 @@ jobs:
       
       # se tiver build, então builda
       - name: se tiver um script build, então execute
-        working-directory: ${{ github.workspace }}/backend
         run: npm run build --if-present
       
       # executa os testes
