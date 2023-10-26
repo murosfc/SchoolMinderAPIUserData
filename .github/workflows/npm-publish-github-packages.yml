@@ -148,5 +148,5 @@ jobs:
       
       # executa os testes
       - name: tem obrigatoriamente que executar os testes
-        working-directory: backend
+        working-directory: /home/runner/work/SchoolMinderAPP/backend
         run: yarn run test
